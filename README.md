@@ -40,13 +40,13 @@ O case é a peça central: retenção vazando numa plataforma B2B de marketing p
 Requer [Bun](https://bun.sh) (ou Node 20+ com npm).
 
 ```bash
-git clone https://github.com/creisbarbosa/cassio-website.git
-cd cassio-website
+git clone https://github.com/creisbarbosa/cassio-portfolio.git
+cd cassio-portfolio
 bun install
 bun run dev
 ```
 
-O Vite imprime a URL local no terminal ao subir (normalmente `http://localhost:5173`).
+O dev server sobe em **`http://localhost:8080`** — a porta é fixada pelo preset `@lovable.dev/vite-tanstack-config`, não é a 5173 padrão do Vite.
 
 <details>
 <summary>Usando npm em vez de Bun</summary>
@@ -56,18 +56,21 @@ npm install
 npm run dev
 ```
 
-O `bun.lock` não é lido pelo npm — as versões serão resolvidas de novo a partir do `package.json`.
+Funciona igual. Só note que o `bun.lock` não é lido pelo npm — as versões são resolvidas de novo a partir do `package.json`, e um `package-lock.json` é gerado.
 </details>
 
 ### Scripts
 
 | Comando | O que faz |
 | --- | --- |
-| `bun run dev` | Dev server com HMR |
-| `bun run build` | Build de produção (SSR + client) |
-| `bun run preview` | Serve o build local |
-| `bun run lint` | ESLint em todo o projeto |
-| `bun run format` | Prettier `--write` |
+| `dev` | Dev server com HMR em `:8080` |
+| `build` | Build de produção (SSR + client) |
+| `build:dev` | Build em modo development |
+| `preview` | Serve o build local |
+| `lint` | ESLint em todo o projeto |
+| `format` | Prettier `--write` |
+
+Prefixe com `bun run` ou `npm run`.
 
 ## Estrutura
 
@@ -103,13 +106,14 @@ src/
 
 ## Notas para quem clonar
 
-- As fontes **PolySans** são carregadas de um CDN de assets externo (URLs `/__l5e/...` em `src/styles.css`). Fora do host original elas não resolvem e a tipografia cai no fallback `ui-sans-serif`. Para hospedar em outro lugar, coloque os `.woff2` em `public/fonts/` e ajuste os `@font-face`.
+- As fontes **PolySans** são carregadas de um CDN de assets externo (URLs `/__l5e/...` em `src/styles.css`). Rodando localmente elas retornam **404** e a tipografia cai no fallback `ui-sans-serif` — o layout não quebra, mas não é a fonte final. Para hospedar fora do Lovable, coloque os `.woff2` em `public/fonts/` e ajuste os quatro `@font-face`.
+- O console do dev mostra um aviso de *hydration mismatch* no `<html>`: é esperado. O `themeBootstrapScript` aplica a classe de tema antes do React hidratar, justamente pra evitar flash — o servidor não tem como prever a preferência do cliente.
 - `public/robots.txt` e `public/sitemap.xml` apontam para o domínio de preview — troque pelo domínio final antes de publicar.
 - O projeto foi iniciado no [Lovable](https://lovable.dev) e mantém a integração: reescrever histórico já publicado (force push, rebase/squash de commits enviados) quebra a sincronia. Veja `AGENTS.md`.
 
 ## Contato
 
-- LinkedIn — [cassioreisbarbosa](https://www.linkedin.com/in/cassioreisbarbosa/)
+- LinkedIn — [creisbarbosa](https://www.linkedin.com/in/creisbarbosa/)
 - E-mail — [creisbarbosa@gmail.com](mailto:creisbarbosa@gmail.com)
 
 ---

@@ -14,7 +14,14 @@ dist-ssr
 .vinxi
 .tanstack/**
 .nitro
+.vercel
 *.local
+
+# Lockfiles
+# O lockfile versionado do projeto é o bun.lock (ver bunfig.toml, que trava
+# supply-chain via minimumReleaseAge). Instalar com npm gera o arquivo abaixo
+# localmente — ele não deve ser commitado, para não haver dois lockfiles.
+package-lock.json
 
 # Wrangler / Cloudflare
 .wrangler/

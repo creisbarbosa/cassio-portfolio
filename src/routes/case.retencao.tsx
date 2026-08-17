@@ -28,7 +28,7 @@ import {
 import { useLanguage } from "@/i18n";
 import { pt } from "@/i18n/pt";
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/cassioreisbarbosa/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/creisbarbosa/";
 const EMAIL = "creisbarbosa@gmail.com";
 const OG_IMAGE =
   "https://project--d89cb723-7a75-42b9-af12-056a848b802f.lovable.app/og-cover.jpg";
