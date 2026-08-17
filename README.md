@@ -106,7 +106,7 @@ src/
 
 ## Notas para quem clonar
 
-- As fontes **PolySans** são carregadas de um CDN de assets externo (URLs `/__l5e/...` em `src/styles.css`). Rodando localmente elas retornam **404** e a tipografia cai no fallback `ui-sans-serif` — o layout não quebra, mas não é a fonte final. Para hospedar fora do Lovable, coloque os `.woff2` em `public/fonts/` e ajuste os quatro `@font-face`.
+- As fontes **PolySans** são auto-hospedadas em `public/fonts/` (quatro pesos, ~128 KB no total), declaradas nos `@font-face` de `src/styles.css` e pré-carregadas em `src/routes/__root.tsx`. Os arquivos em `src/assets/*.asset.json` são metadados herdados do editor do Lovable e não são usados por nenhum código.
 - O console do dev mostra um aviso de *hydration mismatch* no `<html>`: é esperado. O `themeBootstrapScript` aplica a classe de tema antes do React hidratar, justamente pra evitar flash — o servidor não tem como prever a preferência do cliente.
 - `public/robots.txt` e `public/sitemap.xml` apontam para o domínio de preview — troque pelo domínio final antes de publicar.
 - O projeto foi iniciado no [Lovable](https://lovable.dev) e mantém a integração: reescrever histórico já publicado (force push, rebase/squash de commits enviados) quebra a sincronia. Veja `AGENTS.md`.
