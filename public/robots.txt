@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://project--d89cb723-7a75-42b9-af12-056a848b802f.lovable.app/sitemap.xml
+Sitemap: https://www.creisbarbosa.com/sitemap.xml

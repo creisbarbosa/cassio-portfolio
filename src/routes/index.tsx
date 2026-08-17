@@ -20,8 +20,8 @@ import { cn } from "@/lib/utils";
 const LINKEDIN_URL = "https://www.linkedin.com/in/creisbarbosa/";
 const GITHUB_URL = "https://github.com/creisbarbosa";
 const EMAIL = "creisbarbosa@gmail.com";
-const OG_IMAGE =
-  "https://project--d89cb723-7a75-42b9-af12-056a848b802f.lovable.app/og-cover.jpg";
+const SITE_URL = "https://www.creisbarbosa.com";
+const OG_IMAGE = `${SITE_URL}/og-cover.jpg`;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,12 +31,12 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: pt.meta.homeTitle },
       { property: "og:description", content: pt.meta.homeDescription },
       { property: "og:type", content: "profile" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: `${SITE_URL}/` },
       { property: "og:image", content: OG_IMAGE },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: OG_IMAGE },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: `${SITE_URL}/` }],
   }),
   component: Home,
 });
