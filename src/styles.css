@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "PolySans";
-  src: url("/__l5e/assets-v1/f63ba360-f03e-4280-9e92-9e0181f20ccb/PolySans-Slim.woff2") format("woff2");
+  src: url("/fonts/PolySans-Slim.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "PolySans";
-  src: url("/__l5e/assets-v1/b1d82fca-733e-4105-a8eb-37eb4d6f8d38/PolySans-Neutral.woff2") format("woff2");
+  src: url("/fonts/PolySans-Neutral.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: "PolySans";
-  src: url("/__l5e/assets-v1/3114a494-2bbf-4e4e-b915-d656db8e630b/PolySans-Median.woff2") format("woff2");
+  src: url("/fonts/PolySans-Median.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "PolySans";
-  src: url("/__l5e/assets-v1/39c4c0c2-5534-45fb-ac94-820c668685ca/PolySans-Bulky.woff2") format("woff2");
+  src: url("/fonts/PolySans-Bulky.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
