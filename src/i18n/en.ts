@@ -5,9 +5,9 @@ export const en: Dictionary = {
     langLabel: "EN",
     toggleLabel: "PT",
     htmlLang: "en",
-    homeTitle: "Cassio Barbosa · Product Manager — Fintech & Capital Markets",
+    homeTitle: "Cassio Barbosa · PM for Payments — Pix, Instant Payments, Fintech",
     homeDescription:
-      "Product Manager for B2B financial products. Structured discovery, criteria-driven prioritization, AI with curation. Read the retention case.",
+      "PM for B2B payments and instant payments: Pix, SPI, DICT, MED and Pix Automático certified at a Central Bank-authorized SCD, plus multi-tenant BaaS.",
     caseTitle: "The habit that never forms — Product case | Cassio Barbosa",
     caseDescription:
       "Product case on retention at a B2B data-marketing platform: cohort diagnosis, discovery, a bet with an upheld veto and a rollout with guardrails.",
@@ -31,7 +31,7 @@ export const en: Dictionary = {
   hero: {
     overline: "Cassio Barbosa — Product Manager · Fintech & Capital Markets",
     title: "I decide with data, write decisions down, and use AI with curation.",
-    body: "PM for B2B financial products — Internet Banking and capital-markets settlement — with 10+ years across design and product. Structured discovery, criteria-driven prioritization, and the discipline of signing the why behind every decision.",
+    body: "PM for B2B financial products — I implemented and certified Pix, SPI, DICT, MED and Pix Automático at a Brazilian Central Bank-authorized SCD, plus a multi-tenant BaaS platform. Structured discovery, regulation translated into product, and AI with curation.",
     primaryCta: "Read the product case",
     secondaryCta: "Get in touch",
     caption: "Brasília, Brazil · Remote (BR/International) · PT · EN",
@@ -65,10 +65,10 @@ export const en: Dictionary = {
     { value: 4, prefix: "~", suffix: "", label: "years of Product Design background" },
   ],
   credentials: [
-    "3+ years in financial services",
+    "Pix, SPI, DICT, MED and Pix Automático certified",
+    "Multi-tenant white-label BaaS",
+    "Central Bank-authorized SCD",
     "10+ years in digital product",
-    "MBA in Project Management — FGV",
-    "Product Design background",
   ],
   work: {
     title: "How I work",
@@ -84,18 +84,24 @@ export const en: Dictionary = {
       },
       {
         number: "02",
+        title: "Regulation becomes product",
+        lead: "A central bank manual isn't reading material: it's scope, error cases and acceptance criteria.",
+        body: "I implemented and certified Pix, SPI, DICT, MED and Pix Automático — through the test battery, the exception paths and go-live.",
+      },
+      {
+        number: "03",
         title: "Discovery with method.",
         lead: "Interviews coded into fact ≠ opinion ≠ inference, 5 Whys, JTBD.",
         body: "One interview decides nothing alone: it triangulates with quantitative data.",
       },
       {
-        number: "03",
+        number: "04",
         title: "Prioritization with criteria — and with vetoes.",
         lead: "RICE and MoSCoW inform; principles decide.",
         body: "I've upheld a veto on a competitively-scored idea because a customer quote and a metric guardrail weighed against it. A good score doesn't override a principle.",
       },
       {
-        number: "04",
+        number: "05",
         title: "AI with curation.",
         lead: "I use AI as a review partner and calculation engine — to tear down my own plans, re-run the math and attack my biases.",
         body: "Model output never ships unreviewed; the signature on the decision is mine.",
@@ -182,7 +188,7 @@ export const en: Dictionary = {
         company: "Opea — Financial Services",
         period: "Jun 2025–present",
         description:
-          "Own Banco Opea SCD's Internet Banking and the settlement Cockpit (gross, multilateral, integrations). Discovery to delivery: root-cause analysis, PRDs with MoSCoW, RICE prioritization, incident triage with a criticality matrix, written decisions as the default.",
+          "Own Banco Opea SCD's Internet Banking, its payment rails — I implemented and certified Pix, SPI, DICT, MED and Pix Automático — the multi-tenant white-label BaaS platform, and the settlement Cockpit (gross, multilateral, integrations). Discovery to delivery: root-cause analysis, PRDs with MoSCoW, RICE prioritization, incident triage with a criticality matrix, written decisions as the default.",
         emphasis: true,
       },
       {
