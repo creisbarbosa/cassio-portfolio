@@ -3,9 +3,9 @@ export const pt = {
     langLabel: "PT",
     toggleLabel: "EN",
     htmlLang: "pt-BR",
-    homeTitle: "Cassio Barbosa · Product Manager — Fintech & Mercado de Capitais",
+    homeTitle: "Cassio Barbosa · PM de Meios de Pagamento — Pix, SPI e Fintech",
     homeDescription:
-      "Product Manager de produtos financeiros B2B. Discovery estruturado, priorização com critério e IA com curadoria. Veja o case de retenção.",
+      "PM de meios de pagamento B2B: Pix, SPI, DICT, MED e Pix Automático homologados em um SCD autorizado pelo Banco Central, mais plataforma BaaS multi-tenant.",
     caseTitle: "O hábito que não se forma — Case de produto | Cassio Barbosa",
     caseDescription:
       "Case de produto sobre retenção em uma plataforma B2B de marketing por dados: diagnóstico de coortes, discovery, aposta com veto mantido e rollout com guardas.",
@@ -29,7 +29,7 @@ export const pt = {
   hero: {
     overline: "Cassio Barbosa — Product Manager · Fintech & Mercado de Capitais",
     title: "Decido com dados, escrevo decisões e uso IA com curadoria.",
-    body: "PM de produtos financeiros B2B — Internet Banking e liquidações de mercado de capitais — com 10+ anos entre design e produto. Discovery estruturado, priorização com critério e a disciplina de assinar o porquê de cada decisão.",
+    body: "PM de produtos financeiros B2B — implementei e homologuei Pix, SPI, DICT, MED e Pix Automático em um SCD autorizado pelo Banco Central, além de plataforma BaaS multi-tenant. Discovery estruturado, regulação traduzida em produto e IA com curadoria.",
     primaryCta: "Ver o case de produto",
     secondaryCta: "Falar comigo",
     caption: "Brasília · Remoto (BR/Internacional) · PT · EN",
@@ -63,10 +63,10 @@ export const pt = {
     { value: 4, prefix: "~", suffix: "", label: "anos de background em Product Design" },
   ],
   credentials: [
-    "3+ anos em financial services",
+    "Pix, SPI, DICT, MED e Pix Automático homologados",
+    "BaaS multi-tenant white-label",
+    "SCD autorizado pelo Banco Central",
     "10+ anos em produto digital",
-    "MBA Gestão de Projetos — FGV",
-    "Background em Product Design",
   ],
   work: {
     title: "Como eu trabalho",
@@ -83,18 +83,24 @@ export const pt = {
       },
       {
         number: "02",
+        title: "Regulação vira produto",
+        lead: "Manual do Banco Central não é documento de leitura: é escopo, caso de erro e critério de aceite.",
+        body: "Implementei e homologuei Pix, SPI, DICT, MED e Pix Automático — passei pela bateria de testes, pelos casos de exceção e pelo go-live.",
+      },
+      {
+        number: "03",
         title: "Discovery com método.",
         lead: "Entrevistas codificadas em fato ≠ opinião ≠ inferência, 5 porquês, JTBD.",
         body: "Uma entrevista não decide nada sozinha: ela triangula com o dado quantitativo.",
       },
       {
-        number: "03",
+        number: "04",
         title: "Priorização com critério — e com veto.",
         lead: "RICE e MoSCoW informam; princípios decidem.",
         body: "Já mantive veto a uma ideia com score competitivo porque uma fala de cliente e uma guarda de métrica pesavam contra. Score bom não anula princípio.",
       },
       {
-        number: "04",
+        number: "05",
         title: "IA com curadoria.",
         lead: "Uso IA como par de revisão e motor de cálculo — para derrubar meus próprios planos, refazer contas e atacar meus vieses.",
         body: "A saída de modelo nunca vira entrega sem revisão; a assinatura da decisão é minha.",
@@ -181,7 +187,7 @@ export const pt = {
         company: "Opea — Financial Services",
         period: "jun/2025–hoje",
         description:
-          "Respondo pelo Internet Banking do Banco Opea SCD e pelo Cockpit de liquidações (brutas, multilaterais e integralizações). Discovery a delivery: análise de causa raiz, PRDs com MoSCoW, priorização RICE, triagem de incidentes com matriz de criticidade e decisão registrada por escrito como padrão.",
+          "Respondo pelo Internet Banking do Banco Opea SCD, pelos meios de pagamento — implementei e homologuei Pix, SPI, DICT, MED e Pix Automático — pela plataforma BaaS multi-tenant white-label e pelo Cockpit de liquidações (brutas, multilaterais e integralizações). Discovery a delivery: análise de causa raiz, PRDs com MoSCoW, priorização RICE, triagem de incidentes com matriz de criticidade e decisão registrada por escrito como padrão.",
         emphasis: true,
       },
       {

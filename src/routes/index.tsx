@@ -148,6 +148,24 @@ function Home() {
           </div>
         </section>
 
+        {/* CREDENCIAIS */}
+        <Reveal as="section" className="border-t border-border px-5 py-5 sm:px-8">
+          <ul className="mx-auto grid max-w-6xl grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-4">
+            {t.credentials.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-2.5 font-mono text-[0.7rem] uppercase leading-relaxed tracking-[0.12em] text-muted-foreground"
+              >
+                <span
+                  aria-hidden="true"
+                  className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary"
+                />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+
         {/* STATS */}
         <MotionReveal
           as="section"
@@ -181,7 +199,7 @@ function Home() {
         {/* COMO TRABALHO */}
         <Reveal as="section" id="como-trabalho" className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
           <SectionTitle title={t.work.title} subtitle={t.work.subtitle} />
-          <div className="mt-14 grid gap-4 sm:grid-cols-2">
+          <div className="mt-14 grid gap-4 sm:grid-cols-2 sm:[&>article:last-child:nth-child(odd)]:col-span-2">
             {t.work.cards.map((card) => (
               <WorkCard
                 key={card.number}
